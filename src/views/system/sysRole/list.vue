@@ -26,7 +26,7 @@
           <el-button icon="el-icon-refresh" size="mini" @click="resetData"
             >重置</el-button
           >
-          <el-button type="success" icon="el-icon-plus" size="mini" @click="add"
+          <el-button type="success" icon="el-icon-plus" size="mini" @click="add" :disabled="$hasBP('btn.sysRole.add') === false"
             >添 加</el-button
           >
           <el-button class="btn-add" size="mini" @click="batchRemove"
